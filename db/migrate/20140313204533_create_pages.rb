@@ -5,7 +5,7 @@ class CreatePages < ActiveRecord::Migration
       t.text :body
       t.string :mtitle
       t.text :mdesc
-      t.title :mkeywords
+      t.string :mkeywords
 
       t.timestamps
     end

@@ -1,2 +1,5 @@
-%h1 Pages#index
-%p Find me in app/views/pages/show.html.haml
+%h1.page_title
+  = @page.title
+
+.page_body
+  = raw @page.body.html_safe

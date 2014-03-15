@@ -1,9 +1,4 @@
 Trainart::Application.routes.draw do
-  get "pages/index"
-
-  get "pictures/index"
-
-  get "photo/index"
 
   ActiveAdmin.routes(self)
 
@@ -56,9 +51,19 @@ Trainart::Application.routes.draw do
   #     resources :products
   #   end
 
+  resources :pages, only: [:show]
+  resources :photos, only: [:index]
+  resources :pictures, only: [:index]
+
+  #get "pages/:id/show" => 'pages#show'
+  #
+  #get "pictures/index" => 'pictures#index'
+  #
+  #get "photos/index" => 'photos#index'
+
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'photos#index'
 
   # See how all your routes lay out with "rake routes"
 
