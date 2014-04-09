@@ -31,6 +31,8 @@ gem 'friendly_id'         # slug
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+  gem 'compass', '~> 0.13.alpha.12'
+  gem 'compass-rails', '~> 2.0.alpha.0'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
