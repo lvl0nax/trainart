@@ -7,6 +7,9 @@ gem 'rails', '3.2.17'
 
 gem 'pg'
 
+gem 'execjs'
+gem 'therubyracer'
+
 gem 'simple_form'
 gem 'haml-rails'
 gem 'haml'
