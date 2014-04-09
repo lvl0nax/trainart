@@ -99,6 +99,7 @@ GEM
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
     kgio (2.8.1)
+    libv8 (3.16.14.3)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -142,6 +143,7 @@ GEM
     rake (10.1.1)
     rdoc (3.12.2)
       json (~> 1.4)
+    ref (1.0.5)
     responders (1.0.0)
       railties (>= 3.2, < 5)
     rmagick (2.13.2)
@@ -159,6 +161,9 @@ GEM
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
     subexec (0.2.3)
+    therubyracer (0.12.0)
+      libv8 (~> 3.16.14.0)
+      ref
     thor (0.18.1)
     thread_safe (0.2.0)
       atomic (>= 1.1.7, < 2)
@@ -185,6 +190,7 @@ DEPENDENCIES
   activeadmin
   carrierwave
   coffee-rails (~> 3.2.1)
+  execjs
   formtastic (~> 2.1.1)
   friendly_id
   haml
@@ -198,5 +204,6 @@ DEPENDENCIES
   rmagick
   sass-rails (~> 3.2.3)
   simple_form
+  therubyracer
   uglifier (>= 1.0.3)
   unicorn
