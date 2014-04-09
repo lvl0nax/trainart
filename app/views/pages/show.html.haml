@@ -1,5 +1,9 @@
 %h1.page_title
   = @page.title
 
-.page_body
+- if @page.foto.present?
+  .page_foto.span3
+    = image_tag @page.foto_url(:thumb)
+
+.page_body{ class: ('span6' if @page.foto.present?) }
   = raw @page.body.html_safe
