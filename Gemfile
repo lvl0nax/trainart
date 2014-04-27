@@ -16,7 +16,7 @@ gem 'haml'
 
 
 gem 'formtastic', '~> 2.1.1'
-gem 'activeadmin'
+gem 'activeadmin', '0.6.0'
 gem 'meta_search',    '>= 1.1.0.pre'
 gem 'active_admin_editor'
 
